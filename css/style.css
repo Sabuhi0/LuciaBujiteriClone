@@ -57,7 +57,11 @@
     right: 38%;
     background: var(--light-bg);
     box-shadow: 0px 4px 11px -3px;
-    opacity: 0;
+    display: none;
+}
+
+.test {
+    display: inline-block;
 }
 
 .dropdown li {
@@ -67,6 +71,7 @@
 .dropdown li:hover {
     background: var(--gold);
     transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .dropdown li a {
@@ -78,9 +83,14 @@
     transition: all 0.4s ease-in-out;
 }
 
-.dropdown:hover {
-    opacity: 100;
+.test:hover .dropdown {
+    /* opacity: 1; */
+    display: block;
     transition: all 0.3s ease-in-out;
+}
+
+.active {
+    display: block;
 }
 
 
@@ -166,9 +176,10 @@
     color: var(--gold);
 }
 
-.none {
+
+/* .none {
     display: none;
-}
+} */
 
 
 /* banner */

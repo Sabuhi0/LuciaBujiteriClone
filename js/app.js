@@ -18,3 +18,15 @@ miniNav.addEventListener('click', function() {
     open.classList.add('none')
     close.classList.remove('none')
 })
+
+// Dropdown
+const test = document.querySelector('.test')
+const dropdown = document.querySelector('.dropdown')
+
+test.onclick = function() {
+    if (dropdown.classList.contains("active")) {
+        dropdown.classList.remove("active")
+    } else {
+        dropdown.classList.add("active")
+    }
+}
